@@ -1,0 +1,76 @@
+@import "abstracts/variables";
+@import "layout/header";
+@import "layout/hero";
+@import "layout/sobremi";
+@import "layout/skills";
+@import "layout/repositorios";
+@import "layout/contacto";
+@import "layout/footer";
+@import "components/cards";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+  p {
+    color: $p-color;
+    font-family: "Amiko", sans-serif;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+  }
+  li {
+    font-family: "Amiko", sans-serif;
+    letter-spacing: 1px;
+  }
+  h1,
+  h2,
+  h3 {
+    color: $verde-1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+  }
+  h2 {
+    font-size: 1.5rem;
+    padding: 5vh 0 3vh 20vh;
+  }
+  h3 {
+    font-size: 1.2rem;
+    padding: 5vh 0 3vh 25vh;
+  }
+
+  :is(h1, h2, h3, li, p, a, img)::selection {
+    background-color: $verde-1;
+  }
+
+  // MEDIA QUERY - TABLET
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    h2 {
+      font-size: 1.2rem;
+      padding: 5vh 0 3vh 10vh;
+    }
+    h3 {
+      font-size: 1.1rem;
+      padding: 5vh 0 3vh 15vh;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  // MEDIA QUERY - MOBILE
+  @media screen and (min-width: 0px) and (max-width: 599px) {
+    h2 {
+      font-size: 1.2rem;
+      padding: 5vh 0 3vh 4vh;
+    }
+    h3 {
+      font-size: 1.1rem;
+      padding: 5vh 0 3vh 6vh;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}

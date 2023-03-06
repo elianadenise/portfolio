@@ -1,0 +1,80 @@
+.contenedor {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-wrap: wrap;
+
+  .cards {
+    position: relative;
+    width: 20rem;
+    height: 15rem;
+    //   margin: 4rem;
+    .top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20em;
+      height: 15em;
+      z-index: 2;
+      transition: all 0.5s ease-in-out;
+      padding: 5vh 2vh;
+      background-color: $bg-color;
+      padding: 2vh;
+      border: 0.1vh solid $verde-2;
+      border-radius: 0.3em;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      transition: 1s;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        resize: both;
+      }
+
+      i {
+        border: 0.1vh solid $verde-1;
+        border-radius: 150%;
+        padding: 8%;
+        color: $verde-1;
+        transition: 1s;
+        margin: 0 0 1.5vh 0;
+      }
+    }
+  }
+}
+
+.contenedor .cards:hover .top {
+  transform: translate(0.3rem, -0.3rem);
+}
+
+.contenedor .cards:hover .content {
+  transform: translate(-0.3rem, 0.3rem);
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20em;
+  height: 15em;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: $verde-2;
+  border-radius: 0.3em;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+
+// @media (max-width: 600px) {
+//   .container .cards:hover .content {
+//     transform: translate(0, 3.5rem);
+//   }
+//   .container .cards:hover .top {
+//     transform: translate(0, -3.5rem);
+//   }
+// }

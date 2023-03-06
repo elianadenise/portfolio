@@ -1,0 +1,17 @@
+footer {
+  .credito {
+    //Especifico del estilo
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: repeating-linear-gradient(90deg, #52a67e 0, #52a67e 5%, transparent 0, transparent 50%), repeating-linear-gradient(180deg, #52a67e 0, #52a67e 5%, transparent 0, transparent 50%);
+    background-size: 3em 3em;
+    background-color: $verde-1;
+    opacity: 1;
+    margin-bottom: 0;
+    color: $bg-color;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+  }
+}

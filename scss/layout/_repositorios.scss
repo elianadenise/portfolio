@@ -1,0 +1,88 @@
+#portfolio {
+  .top {
+    padding: 0;
+    img{
+      border-radius: 0.3rem 0.3rem 0 0 ;
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0;
+      margin: 0;
+      justify-content: space-evenly;
+      
+      .fa-eye,
+      .fa-github {
+        margin: 1vh;
+        transition: 0.2s;
+        &:hover {
+          background-color: $verde-1;
+          color: $bg-color;
+        }
+      }
+    }
+  }
+
+  .repositorio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 10vw;
+    border-bottom: solid 0.2vh $bg-color;
+    padding: 1vw 3vh 0.1vw 3vh;
+    align-self: center;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #222222;
+      border-radius: 0.3em;
+      .fa-github {
+        color: $verde-1;
+        color: $verde-2;
+      }
+    }
+
+    i {
+      color: $verde-1;
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .repositorio {
+      margin: 0 20vw;
+    }
+  }
+
+// MEDIA QUERY - TABLET
+@media screen and (min-width: 600px) and (max-width: 900px) {}
+ // MEDIA QUERY - MOBILE
+@media screen and (min-width: 0px) and (max-width: 599px){
+  .cards {
+    margin-bottom: 5vh;
+    width: 15rem;
+    height: 11rem;
+    .top {
+      width: 15rem;
+      height: 11rem;
+    }
+    .content{
+      width: 15rem;
+      height: 11rem;
+    }
+  }
+  .repositorio{
+    margin: 0 2vh;
+  }
+}
+
+
+
+}

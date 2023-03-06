@@ -1,0 +1,64 @@
+#contacto {
+  p {
+    padding-left: 20vh !important;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5vh 25vh 10vh 25vh !important;
+
+    ul {
+      list-style: none;
+      li {
+        font-size: 0.9rem;
+        .otros {
+          padding-bottom: 1vh;
+        }
+
+        .github {
+          padding-bottom: 10vw;
+        }
+        a {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          text-decoration: none;
+          align-items: center;
+          transition: 0.2s;
+          color: $p-color;
+
+          &:hover {
+            color: $verde-1;
+          }
+        }
+      }
+    }
+
+    img {
+      height: 30vh;
+    }
+  }
+  // MEDIA QUERY - TABLET
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    p {
+      padding: 0 5vh !important;
+    }
+    div {
+      padding: 5vh;
+      align-content: center;
+    }
+  }
+  // MEDIA QUERY - MOBILE
+  @media screen and (min-width: 0px) and (max-width: 599px) {
+  }
+  p {
+    padding: 0 4vh !important;
+  }
+  div {
+    padding: 5vh;
+    align-content: center;
+  }
+}

@@ -1,0 +1,57 @@
+#presentation {
+  padding: 0 20vh;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .p-1 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    margin: 0;
+  }
+  .p-2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $verde-2;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0 !important;
+  }
+
+  background-color: $bg-color;
+  opacity: 1;
+  background-image: radial-gradient(#1f4834 1px, #161616 1px);
+  background-size: 20px 20px;
+  // https://heropatterns.com/
+
+  // MEDIA QUERY - TABLET
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    padding: 0 10vh;
+  }
+  // MEDIA QUERY - MOBILE
+  @media screen and (min-width: 0px) and (max-width: 599px) {
+    padding: 0 5vh;
+    .p-1 {
+      font-size: 1rem;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    .p-2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: $verde-2;
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      padding: 0 !important;
+    }
+  }
+}
