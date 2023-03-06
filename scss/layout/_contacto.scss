@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: start;
-    padding: 5vh 25vh 10vh 25vh !important;
+    padding: 5vh 25vh 10vh 25vh;
 
     ul {
       list-style: none;
@@ -53,12 +53,13 @@
   }
   // MEDIA QUERY - MOBILE
   @media screen and (min-width: 0px) and (max-width: 599px) {
+    p {
+      padding: 0 4vh !important;
+    }
+    div {
+      padding: 5vh;
+      align-content: center;
+    }
   }
-  p {
-    padding: 0 4vh !important;
-  }
-  div {
-    padding: 5vh;
-    align-content: center;
-  }
+
 }

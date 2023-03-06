@@ -320,7 +320,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
-  padding: 5vh 25vh 10vh 25vh !important; }
+  padding: 5vh 25vh 10vh 25vh; }
   #contacto div ul {
     list-style: none; }
     #contacto div ul li {
@@ -349,12 +349,12 @@ header {
     padding: 5vh;
     align-content: center; } }
 
-#contacto p {
-  padding: 0 4vh !important; }
-
-#contacto div {
-  padding: 5vh;
-  align-content: center; }
+@media screen and (min-width: 0px) and (max-width: 599px) {
+  #contacto p {
+    padding: 0 4vh !important; }
+  #contacto div {
+    padding: 5vh;
+    align-content: center; } }
 
 footer .credito {
   height: 20vh;
@@ -453,10 +453,10 @@ body {
     font-weight: 900; }
   body h2 {
     font-size: 1.5rem;
-    padding: 5vh 0 3vh 20vh; }
+    padding: 5vh 0 4vh 20vh; }
   body h3 {
     font-size: 1.2rem;
-    padding: 5vh 0 3vh 25vh; }
+    padding: 5vh 0 4vh 25vh; }
   body :is(h1, h2, h3, li, p, a, img)::selection {
     background-color: #4A9E76; }
   @media screen and (min-width: 600px) and (max-width: 900px) {
