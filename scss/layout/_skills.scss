@@ -21,7 +21,7 @@
     justify-content: start;
     align-items: center;
     transition: 0.2s;
-    i {
+    .icono-seccion{
       border: 0.1vh solid $verde-1;
       border-radius: 150%;
       padding: 5%;
@@ -29,13 +29,23 @@
       transition: 1s;
       margin: 0 0 1.5vh 0;
     }
+    .iconos {
+      border: 0;
+      border-radius: none;
+      color: $gris;
+      transition: 1s;
+      i{
+        padding-right: 1vh;
+      }
+      
+    }
     .titulo {
       font-size: 1.2rem;
     }
     &:hover {
       background-color: rgba(74, 158, 118, .3);
 
-      i {
+      .icono-seccion {
         background-color: $bg-color;
         color: $verde-1;
         border-color: $bg-color;
@@ -45,14 +55,14 @@
 
   .dev {
     margin: 0vh 50vh 2vh 20vh;
-    i {
+    .icono-seccion {
       margin: 0 2vh 0 0;
     }
   }
   .testing {
     margin: 2vh 20vh 0 50vh;
     text-align: end;
-    i {
+    .icono-seccion {
       margin: 0 0 0 2vh;
     }
   }

@@ -1,0 +1,30 @@
+.boton {
+    background-color: $bg-color;
+    border-radius: 0.3rem;
+    color: $p-color;
+    border: 0.1vh solid $verde-1;
+    padding: 0.8vh 2vh;
+    transition: 0.5s;
+    font-family: $parrafos;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+
+    &:hover{
+        background-color: rgba(74, 158, 118, .3);
+        transform: scale(1.2);
+    }
+
+// MEDIA QUERY - TABLET
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  // MEDIA QUERY - MOBILE
+  @media screen and (min-width: 0px) and (max-width: 599px) {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+}

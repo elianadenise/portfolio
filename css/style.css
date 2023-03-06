@@ -44,6 +44,16 @@ header {
           transform: scaleX(1); }
         header ul li a.from-left:after {
           transform-origin: 0% 50%; }
+  header .navbar-brand {
+    padding-left: 3vw; }
+    header .navbar-brand div span {
+      color: #E9F8F9;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 1.5rem;
+      transition: 0.5s; }
+    header .navbar-brand div:hover span {
+      color: #4A9E76; }
   header .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(74,158,118,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
   header .navbar-toggler {
@@ -97,9 +107,9 @@ header {
         font-size: 1rem;
         margin: 0; }
       #presentation h1 {
-        font-size: 2.5rem; }
+        font-size: 2rem; }
       #presentation .p-2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 700;
         color: #346751;
         font-family: "Montserrat", sans-serif;
@@ -115,7 +125,7 @@ header {
   padding: 0 5vh; }
 
 #about-me .texto {
-  padding: 0 10vh 5vh 0; }
+  padding: 0 10vh 10vh 0; }
   #about-me .texto .devqa {
     font-size: 1.5rem; }
   #about-me .texto span {
@@ -163,16 +173,33 @@ header {
   width: 100%;
   height: 100%; }
 
+#about-me button {
+  /* Grow */
+  /* Grow */ }
+  #about-me button .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform; }
+  #about-me button .hvr-grow:hover, #about-me button .hvr-grow:focus, #about-me button .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
 @media screen and (min-width: 600px) and (max-width: 900px) {
   #about-me .texto {
-    padding: 0; } }
+    padding-bottom: 10vh; } }
 
 @media screen and (min-width: 0px) and (max-width: 599px) {
   #about-me .flex {
     flex-direction: column;
     align-self: center; }
   #about-me .texto {
-    padding: 0; }
+    padding-bottom: 10vh; }
     #about-me .texto .devqa {
       font-size: 1rem; }
   #about-me .contenedor .box {
@@ -200,35 +227,44 @@ header {
   justify-content: start;
   align-items: center;
   transition: 0.2s; }
-  #skills .dev i,
-  #skills .testing i {
+  #skills .dev .icono-seccion,
+  #skills .testing .icono-seccion {
     border: 0.1vh solid #4A9E76;
     border-radius: 150%;
     padding: 5%;
     color: #4A9E76;
     transition: 1s;
     margin: 0 0 1.5vh 0; }
+  #skills .dev .iconos,
+  #skills .testing .iconos {
+    border: 0;
+    border-radius: none;
+    color: #888787;
+    transition: 1s; }
+    #skills .dev .iconos i,
+    #skills .testing .iconos i {
+      padding-right: 1vh; }
   #skills .dev .titulo,
   #skills .testing .titulo {
     font-size: 1.2rem; }
   #skills .dev:hover,
   #skills .testing:hover {
     background-color: rgba(74, 158, 118, 0.3); }
-    #skills .dev:hover i,
-    #skills .testing:hover i {
+    #skills .dev:hover .icono-seccion,
+    #skills .testing:hover .icono-seccion {
       background-color: #161616;
       color: #4A9E76;
       border-color: #161616; }
 
 #skills .dev {
   margin: 0vh 50vh 2vh 20vh; }
-  #skills .dev i {
+  #skills .dev .icono-seccion {
     margin: 0 2vh 0 0; }
 
 #skills .testing {
   margin: 2vh 20vh 0 50vh;
   text-align: end; }
-  #skills .testing i {
+  #skills .testing .icono-seccion {
     margin: 0 0 0 2vh; }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
@@ -312,7 +348,7 @@ header {
     margin: 0 2vh; } }
 
 #contacto p {
-  padding-left: 20vh !important; }
+  padding: 0 20vh !important; }
 
 #contacto div {
   display: flex;
@@ -320,41 +356,54 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
-  padding: 5vh 25vh 10vh 25vh; }
+  padding: 5vh 25vh 10vh 25vh;
+  margin: 0 15vh; }
   #contacto div ul {
     list-style: none; }
-    #contacto div ul li {
-      font-size: 0.9rem; }
-      #contacto div ul li .otros {
-        padding-bottom: 1vh; }
-      #contacto div ul li .github {
-        padding-bottom: 10vw; }
-      #contacto div ul li a {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        text-decoration: none;
-        align-items: center;
-        transition: 0.2s;
-        color: #E9F8F9; }
-        #contacto div ul li a:hover {
-          color: #4A9E76; }
+    #contacto div ul li .otros {
+      padding-bottom: 1vh; }
+    #contacto div ul li .github {
+      padding-bottom: 10vw; }
+    #contacto div ul li a {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      text-decoration: none;
+      align-items: center;
+      transition: 0.2s;
+      color: #E9F8F9; }
+      #contacto div ul li a:hover {
+        color: #4A9E76; }
   #contacto div img {
     height: 30vh; }
 
+@media screen and (min-width: 900px) {
+  #contacto .otros {
+    font-size: 0.9rem; }
+  #contacto .github {
+    font-size: 0.9rem; } }
+
 @media screen and (min-width: 600px) and (max-width: 900px) {
-  #contacto p {
-    padding: 0 5vh !important; }
   #contacto div {
     padding: 5vh;
-    align-content: center; } }
+    align-content: center;
+    margin: 0; }
+  #contacto li .otros {
+    font-size: 0.8rem; }
+  #contacto li .github {
+    font-size: 0.8rem; } }
 
 @media screen and (min-width: 0px) and (max-width: 599px) {
   #contacto p {
     padding: 0 4vh !important; }
   #contacto div {
     padding: 5vh;
-    align-content: center; } }
+    align-content: center;
+    margin: 0; }
+  #contacto li .otros {
+    font-size: 0.8rem; }
+  #contacto li .github {
+    font-size: 0.8rem; } }
 
 footer .credito {
   height: 20vh;
@@ -430,6 +479,26 @@ footer .credito {
   border-radius: 0.3em;
   z-index: 1;
   transition: 0.5s ease-in-out; }
+
+.boton {
+  background-color: #161616;
+  border-radius: 0.3rem;
+  color: #E9F8F9;
+  border: 0.1vh solid #4A9E76;
+  padding: 0.8vh 2vh;
+  transition: 0.5s;
+  font-family: "Amiko", sans-serif;
+  letter-spacing: 1px;
+  font-size: 0.9rem; }
+  .boton:hover {
+    background-color: rgba(74, 158, 118, 0.3);
+    transform: scale(1.2); }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    .boton p {
+      font-size: 0.8rem; } }
+  @media screen and (min-width: 0px) and (max-width: 599px) {
+    .boton p {
+      font-size: 0.8rem; } }
 
 * {
   margin: 0;
