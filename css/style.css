@@ -47,13 +47,13 @@ header {
   header .navbar-brand {
     padding-left: 3vw; }
     header .navbar-brand div span {
-      color: #E9F8F9;
+      color: #4A9E76;
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
       font-size: 1.5rem;
       transition: 0.5s; }
     header .navbar-brand div:hover span {
-      color: #4A9E76; }
+      color: #346751; }
   header .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(74,158,118,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
   header .navbar-toggler {
@@ -354,16 +354,17 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: start;
   padding: 5vh 25vh 10vh 25vh;
-  margin: 0 15vh; }
+  margin: 0 15vh;
+  justify-content: center; }
   #contacto div ul {
-    list-style: none; }
+    list-style: none;
+    padding-right: 5vw; }
     #contacto div ul li .otros {
       padding-bottom: 1vh; }
     #contacto div ul li .github {
-      padding-bottom: 10vw; }
+      margin-bottom: 10vw; }
     #contacto div ul li a {
       display: flex;
       flex-direction: row;
@@ -375,7 +376,8 @@ header {
       #contacto div ul li a:hover {
         color: #4A9E76; }
   #contacto div img {
-    height: 30vh; }
+    height: 30vh;
+    padding-left: 5vw; }
 
 @media screen and (min-width: 900px) {
   #contacto .otros {
@@ -526,7 +528,7 @@ body {
   body h3 {
     font-size: 1.2rem;
     padding: 5vh 0 4vh 25vh; }
-  body :is(h1, h2, h3, li, p, a, img)::selection {
+  body :is(h1, h2, h3, li, p, a, img, span)::selection {
     background-color: #4A9E76; }
   @media screen and (min-width: 600px) and (max-width: 900px) {
     body h2 {

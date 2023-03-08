@@ -9,7 +9,7 @@ window.onscroll = function() {
     console.log("Prev: " + prevScrollPos);
     console.log("Curr: " + currentScrollPos);
   } else {
-    document.getElementById("navbar").style.top = "-8vw";
+    document.getElementById("navbar").style.top = "-15vw"; // igual o mayot al alto del nav
     console.log("Prev: " + prevScrollPos);
     console.log("Curr: " + currentScrollPos);
   }

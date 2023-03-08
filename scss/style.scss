@@ -42,7 +42,7 @@ body {
     padding: 5vh 0 4vh 25vh;
   }
 
-  :is(h1, h2, h3, li, p, a, img)::selection {
+  :is(h1, h2, h3, li, p, a, img, span)::selection {
     background-color: $verde-1;
   }
 
